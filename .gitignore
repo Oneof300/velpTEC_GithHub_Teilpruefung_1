@@ -1,0 +1,12 @@
+# Temporäre Dateien
+*.tmp
+
+# Logdateien
+*.log
+
+# Editordateien
+.vscode/
+build/
+
+# Abhängigkeiten
+node_modules/
