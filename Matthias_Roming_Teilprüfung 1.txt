@@ -1,0 +1,45 @@
+a)
+1 Projektordner anlegen
+2 Im Projektordner die Kommandozeile aufrufen und 'git init' ausführen
+3 'echo "# New web app" > README.md' ausführen
+4 'git add README.md' ausführen, um die Datei zu stagen
+5 'git commit -m "Add README.md"' ausführen für den ersten Commit
+6 Optional 'git branch -M main' um den Namen des Hauptbranches zu ändern
+
+b)
+1 'echo "*.tmp" > .gitignore' zum erstellen der Datei mit ersten Eintrag für temporäre Dateien
+2 Datei in einem Editor öffnen weitere Zeilen einfügen:
+für Logdateien '*.log'
+für generierte Dateien des Editors '.vscode/' für Visual Studio Code
+für Dateien, die beim Bauen erstellt werden 'build/*' 
+für Abhängigkeiten 'node_modules/*' für ein Projekt mit node.js
+3 'git add .gitignore' und 'git commit -m "Add .gitignore"' ausführen
+
+c)
+Erstellen: 'git branch develop' und 'git branch feature-login'
+Wechseln:
+'git checkout develop' um zum develop-Branch zu wechseln
+'git checkout ferature-login' um zum login-feature-Branch zu wechseln
+
+d)
+1 'git checkout develop'
+2 'git merge feature-login'
+Bei Konflikten würde ich die entsprechenden Dateien in VS Code öffnen und mich jeweils für
+die Zeilen von develop oder von feature-login entscheiden oder ggf. manuell Teile von beiden
+Versionen des Abschnittes zusammenführen und danach die Konfliktmarkierungen entfernen.
+Abschließend stage ich und committe alles.
+
+e)
+1 Auf meinem GitHub unter Repositories auf 'New' klicken
+2 Projektname angeben (gleicher wie der des lokalen Ordners/Repositories)
+3 In der Kommandozeile 'git remote add origin https://git@github.com:[Benutzer]/[Projektname].git'
+ausführen mit meinem Benutzernamen und dem Projektnamen
+4 'git push -u origin main' um den lokalen Stand auf das remote-Repository zu übertragen
+5 Authentifizieren
+
+f)
+1 Auf dem Repository in meinem GitHub auf den Reiter 'Issues'
+2 Auf 'New issue' klicken
+3 Titel und Beschreibung angeben
+4 Rechts auf 'Milestone' klicken und ein Milestone auswählen
+5 'Create issue' klicken
